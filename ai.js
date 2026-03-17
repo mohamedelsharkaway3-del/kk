@@ -1,6 +1,15 @@
-// ═══════════════════════════════════════════
+ // ═══════════════════════════════════════════
 //  ONVO OS — تكامل الذكاء الاصطناعي (Claude via Netlify)
 // ═══════════════════════════════════════════
+
+// إضافة متغير Roles لكل الفرق
+const rolesByTeam = {
+  Marketing: ['Marketing Lead', 'Content Creator', 'Copywriter', 'Social Media Manager', 'SEO Specialist', 'Brand Strategist'],
+  Sales: ['Sales Lead', 'Sales Executive', 'Account Manager', 'Business Development Manager', 'Key Account Manager'],
+  Management: ['Founder', 'Director', 'Supervisor', 'Operations Manager', 'Project Manager', 'General Manager'],
+  Support: ['Support Lead', 'Support Agent', 'Customer Success Manager', 'Technical Support Specialist'],
+  Development: ['Dev Lead', 'Frontend Developer', 'Backend Developer', 'Fullstack Developer', 'QA Engineer', 'UI/UX Designer']
+};
 
 const ONVO_AI = {
   endpoint: '/.netlify/functions/ai-proxy',
